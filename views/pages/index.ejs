@@ -5,7 +5,7 @@
     <meta id="myReferrer" name="referrer" content="no-referrer" />
 
     <script>
-      window.history.pushState({}, '', '?hello=world&gtm_debug=1702008688688');
+      window.history.pushState({}, '', '?hello=world');
 
       function handleSelect(event) {
         const tag = document.querySelector('#myReferrer');
@@ -16,7 +16,11 @@
 
   <body>
     <div style="margin-bottom: 1rem">
-      <a href="https://help.salesforce.com/s/">Navigate to help with selected referrer attribute</a>
+      <a href="https://help.salesforce.com/s/">Cross Domain</a>
+    </div>
+
+    <div style="margin-bottom: 1rem">
+      <a href="/">Same Domain</a>
     </div>
 
     <select onchange="handleSelect(event)">
