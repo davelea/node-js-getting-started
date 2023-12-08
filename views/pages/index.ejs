@@ -5,6 +5,7 @@
     <meta id="myReferrer" name="referrer" content="no-referrer" />
 
     <script>
+      document.querySelector('#currentReferrer').textContent = document.referrer;
       window.history.pushState({}, '', '?hello=world');
 
       function handleSelect(event) {
@@ -33,5 +34,7 @@
       <option>strict-origin-when-cross-origin</option>
       <option>unsafe-url</option>
     </select>
+
+    <div>Current Referrer: <span id="currentReferrer" style="color: gray"></span></div>
   </body>
 </html>
