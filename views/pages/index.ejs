@@ -5,7 +5,7 @@
     <meta id="myReferrer" name="referrer" content="no-referrer" />
 
     <script>
-      document.querySelector('#currentReferrer').textContent = document.referrer;
+      document.getElementById('currentReferrer').textContent = document.referrer;
       window.history.pushState({}, '', '?hello=world');
 
       function handleSelect(event) {
