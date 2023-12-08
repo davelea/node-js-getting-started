@@ -5,11 +5,7 @@
     <meta id="myReferrer" name="referrer" content="no-referrer" />
 
     <script>
-      window.history.pushState(
-        {},
-        '',
-        window.location.host + window.location.pathname + '?hello=world&gtm_debug=1702008688688'
-      );
+      window.history.pushState({}, '', window.location.host + '/?hello=world&gtm_debug=1702008688688');
 
       function handleSelect(event) {
         const tag = document.querySelector('#myReferrer');
