@@ -5,7 +5,7 @@
     <meta id="myReferrer" name="referrer" content="no-referrer" />
 
     <script>
-      document.getElementById('currentReferrer').textContent = document.referrer;
+      document.getElementById('currentReferrer').textContent = JSON.stringify(document.referrer);
       window.history.pushState({}, '', '?hello=world');
 
       function handleSelect(event) {
@@ -35,6 +35,6 @@
       <option>unsafe-url</option>
     </select>
 
-    <div>Current Referrer: <span id="currentReferrer" style="color: gray"></span></div>
+    <div style="margin-top: 1rem">Current Referrer: <span id="currentReferrer" style="color: gray"></span></div>
   </body>
 </html>
